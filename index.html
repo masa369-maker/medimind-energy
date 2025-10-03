@@ -21,7 +21,7 @@ a{color:#457B9D;text-decoration:none;border-radius:8px;padding:4px 8px;}
 a:hover{background-color:#A8DADC;color:#fff;}
 .footer{background-color:#FFF8E7;padding:20px;text-align:center;font-size:0.9em;}
 
-/* スライダー用 */
+/* スライダー */
 .slider {position:relative; max-width:100%; margin:auto; overflow:hidden; border-radius:12px;}
 .slides {display:flex; width:300%; animation:slide 12s infinite;}
 .slides img {width:100%; border-radius:12px;}
@@ -33,7 +33,13 @@ a:hover{background-color:#A8DADC;color:#fff;}
   100% {transform:translateX(0%);}
 }
 
-/* カレンダーのレスポンシブ調整 */
+/* 予約フォーム */
+form{max-width:600px;margin:auto;background-color:#FDF6E3;padding:20px;border-radius:12px;}
+input, textarea, select{width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #ccc;}
+input[type=submit]{background-color:#A8DADC;color:#fff;border:none;cursor:pointer;}
+input[type=submit]:hover{background-color:#457B9D;}
+
+/* カレンダーのレスポンシブ */
 iframe {width:100%; max-width:100%; border-radius:12px;}
 </style>
 </head>
@@ -92,7 +98,7 @@ iframe {width:100%; max-width:100%; border-radius:12px;}
     </li>
   </ul>
   <div style="text-align:center; margin-top:20px;">
-    <a href="reservation.html" class="btn">ご予約はこちら</a>
+    <a href="#reservation-form" class="btn">ご予約はこちら</a>
   </div>
 </div>
 
@@ -101,6 +107,37 @@ iframe {width:100%; max-width:100%; border-radius:12px;}
   <h2>予約カレンダー</h2>
   <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=Asia/Tokyo"
     style="border:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<!-- 予約フォーム -->
+<div class="section main" id="reservation-form">
+  <h2>予約フォーム</h2>
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <label>お名前</label>
+    <input type="text" name="name" required>
+
+    <label>メールアドレス</label>
+    <input type="email" name="email" required>
+
+    <label>電話番号</label>
+    <input type="tel" name="tel" required>
+
+    <label>希望メニュー</label>
+    <select name="menu" required>
+      <option value="エネルギー整体60分">エネルギー整体 60分</option>
+      <option value="エネルギー整体90分">エネルギー整体 90分</option>
+      <option value="ヒーリング30分">ヒーリング 30分</option>
+      <option value="ヒーリング60分">ヒーリング 60分</option>
+    </select>
+
+    <label>希望日時</label>
+    <input type="datetime-local" name="datetime" required>
+
+    <label>備考</label>
+    <textarea name="note" rows="4" placeholder="ご希望や質問など"></textarea>
+
+    <input type="submit" value="予約を送信">
+  </form>
 </div>
 
 <!-- お問い合わせ -->
