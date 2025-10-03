@@ -6,41 +6,54 @@
 <title>メディマインドエネルギー整体</title>
 <style>
 body {margin:0;font-family:"Helvetica",sans-serif;background-color:#E8F6E8;color:#333;}
-.header{background-color:#D0F0C0;padding:40px 20px;text-align:center;}
+.header{background-color:#D0F0C0;padding:20px;text-align:center;}
 .header h1{margin:0;font-size:2em;}
-.main{background-color:#FDF6E3;padding:40px 20px;}
-.main h2{text-align:center;margin-bottom:20px;}
-.btn{display:inline-block;background-color:#A8DADC;color:#fff;padding:12px 24px;text-decoration:none;border-radius:12px;transition:0.3s;}
-.btn:hover{background-color:#457B9D;}
 .section{padding:40px 20px;}
 .section h2{text-align:center;margin-bottom:20px;}
 .section2{background-color:#F3E8F6;}
 .section3{background-color:#FFF8E7;}
-.footer{background-color:#FFF8E7;padding:20px;text-align:center;font-size:0.9em;}
-a{color:#457B9D;text-decoration:none;border-radius:8px;padding:4px 8px;}
-a:hover{background-color:#A8DADC;color:#fff;}
+.main{background-color:#FDF6E3;padding:40px 20px;}
+.btn{display:inline-block;background-color:#A8DADC;color:#fff;padding:12px 24px;text-decoration:none;border-radius:12px;transition:0.3s;}
+.btn:hover{background-color:#457B9D;}
 ul{max-width:700px;margin:0 auto; padding-left:20px;}
 ul li{margin-bottom:20px;}
-img{max-width:100%;border-radius:12px;margin:10px 0;}
+a{color:#457B9D;text-decoration:none;border-radius:8px;padding:4px 8px;}
+a:hover{background-color:#A8DADC;color:#fff;}
+.footer{background-color:#FFF8E7;padding:20px;text-align:center;font-size:0.9em;}
+/* スライダー用 */
+.slider{position:relative;max-width:100%;margin:auto;overflow:hidden;border-radius:12px;}
+.slides{display:flex;width:300%;animation:slide 12s infinite;}
+.slides img{width:100%;border-radius:12px;}
+@keyframes slide {
+  0% {transform:translateX(0%);}
+  25% {transform:translateX(-100%);}
+  50% {transform:translateX(-200%);}
+  75% {transform:translateX(-100%);}
+  100% {transform:translateX(0%);}
+}
 </style>
 </head>
 <body>
 
-<div class="header">
-  <h1>メディマインドエネルギー整体</h1>
-  <p>心と体のバランスを整える癒しの整体</p>
+<!-- 当院の特徴を最上部に -->
+<div class="section section2">
+  <h2>当院の特徴</h2>
+  <p>心と体を整え、日常生活の質を向上させるための整体です。<br>
+     エネルギーの流れに注目した施術で、身体の不調やストレスを和らげます。</p>
 </div>
 
-<!-- 施術メニューセクション -->
+<!-- 画像スライダー -->
+<div class="slider">
+  <div class="slides">
+    <img src="https://images.unsplash.com/photo-1556228720-68a4ed73dc1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="リラックス整体">
+    <img src="https://images.unsplash.com/photo-1554284126-5c05b15de08b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="ヒーリング整体">
+    <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="癒しイメージ">
+  </div>
+</div>
+
+<!-- 施術メニュー -->
 <div class="section main">
   <h2>施術メニュー</h2>
-
-  <!-- メニューイメージ画像 -->
-  <div style="text-align:center; margin-bottom:20px;">
-    <img src="https://images.unsplash.com/photo-1556228720-68a4ed73dc1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2VsbG5lc3N8ZW58MHx8MHx8&ixlib=rb-4.0.3&q=80&w=800" alt="リラックス整体">
-    <img src="https://images.unsplash.com/photo-1554284126-5c05b15de08b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29tYW4lMjByZWxhemluZ3xlbnwwfHwwfHw%3D&ixlib=rb-4.0.3&q=80&w=800" alt="ヒーリング整体">
-  </div>
-
   <ul>
     <li>
       <strong>エネルギー整体 60分</strong><br>
@@ -67,17 +80,16 @@ img{max-width:100%;border-radius:12px;margin:10px 0;}
       料金：5,000円
     </li>
   </ul>
-
   <div style="text-align:center; margin-top:20px;">
     <a href="reservation.html" class="btn">ご予約はこちら</a>
   </div>
 </div>
 
-<!-- 当院の特徴 -->
+<!-- 予約カレンダー -->
 <div class="section section2">
-  <h2>当院の特徴</h2>
-  <p>心と体を整え、日常生活の質を向上させるための整体です。<br>
-     エネルギーの流れに注目した施術で、身体の不調やストレスを和らげます。</p>
+  <h2>予約カレンダー</h2>
+  <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=Asia/Tokyo"
+    style="border:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
 
 <!-- お問い合わせ -->
