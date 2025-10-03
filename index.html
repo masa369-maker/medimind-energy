@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -13,23 +12,16 @@ body {margin:0;font-family:"Helvetica",sans-serif;background-color:#E8F6E8;color
 .main h2{text-align:center;margin-bottom:20px;}
 .btn{display:inline-block;background-color:#A8DADC;color:#fff;padding:12px 24px;text-decoration:none;border-radius:12px;transition:0.3s;}
 .btn:hover{background-color:#457B9D;}
-.section2{background-color:#F3E8F6;padding:40px 20px;}
-.section3{background-color:#FFF8E7;padding:40px 20px;}
+.section{padding:40px 20px;}
+.section h2{text-align:center;margin-bottom:20px;}
+.section2{background-color:#F3E8F6;}
+.section3{background-color:#FFF8E7;}
 .footer{background-color:#FFF8E7;padding:20px;text-align:center;font-size:0.9em;}
 a{color:#457B9D;text-decoration:none;border-radius:8px;padding:4px 8px;}
 a:hover{background-color:#A8DADC;color:#fff;}
-form{max-width:400px;margin:0 auto;display:flex;flex-direction:column;gap:12px;}
-input, select, textarea, button{font-size:1em;border-radius:8px;padding:10px;box-sizing:border-box;}
-input, select, textarea{border:1px solid #ccc;width:100%;}
-button{background-color:#A8DADC;color:#fff;border:none;padding:12px;cursor:pointer;transition:0.3s;}
-button:hover{background-color:#457B9D;}
-.calendar {max-width:400px;margin:20px auto 40px auto;display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center;}
-.calendar div{padding:10px;border-radius:8px;cursor:pointer;transition:0.3s;}
-.calendar .available{background-color:#E0F2F1;}
-.calendar .available:hover{background-color:#A8DADC;color:#fff;}
-.calendar .selected{background-color:#457B9D;color:#fff;}
-.calendar .unavailable{background-color:#ccc;cursor:not-allowed;color:#666;}
-.calendar-nav{display:flex;justify-content:space-between;max-width:400px;margin:10px auto;font-weight:bold;}
+ul{max-width:700px;margin:0 auto; padding-left:20px;}
+ul li{margin-bottom:20px;}
+img{max-width:100%;border-radius:12px;margin:10px 0;}
 </style>
 </head>
 <body>
@@ -39,143 +31,65 @@ button:hover{background-color:#457B9D;}
   <p>心と体のバランスを整える癒しの整体</p>
 </div>
 
-<div class="main">
-  <h2>施術内容</h2>
-  <p>エネルギー整体で心身のリラックスをサポートします。</p>
-  <a href="#contact" class="btn">ご予約はこちら</a>
+<!-- 施術メニューセクション -->
+<div class="section main">
+  <h2>施術メニュー</h2>
+
+  <!-- メニューイメージ画像 -->
+  <div style="text-align:center; margin-bottom:20px;">
+    <img src="https://images.unsplash.com/photo-1556228720-68a4ed73dc1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2VsbG5lc3N8ZW58MHx8MHx8&ixlib=rb-4.0.3&q=80&w=800" alt="リラックス整体">
+    <img src="https://images.unsplash.com/photo-1554284126-5c05b15de08b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29tYW4lMjByZWxhemluZ3xlbnwwfHwwfHw%3D&ixlib=rb-4.0.3&q=80&w=800" alt="ヒーリング整体">
+  </div>
+
+  <ul>
+    <li>
+      <strong>エネルギー整体 60分</strong><br>
+      身体の緊張や疲れをほぐし、エネルギーの流れを整えます。<br>
+      効果：ストレス軽減・リラックス・姿勢改善<br>
+      料金：8,000円
+    </li>
+    <li>
+      <strong>エネルギー整体 90分</strong><br>
+      60分コースに加え、深層の筋肉や心の緊張も調整します。<br>
+      効果：慢性的な疲れ・頭痛・不眠の緩和<br>
+      料金：12,000円
+    </li>
+    <li>
+      <strong>ヒーリング 30分</strong><br>
+      心と体のエネルギーのバランスを整え、短時間でもスッキリとしたリラックス感を体感できます。<br>
+      日常のストレスや疲労を和らげたい方、初めてヒーリングを体験される方におすすめです。<br>
+      料金：3,000円
+    </li>
+    <li>
+      <strong>ヒーリング 60分</strong><br>
+      じっくりと全身のエネルギーを調整し、深いリラクゼーションを実感できます。<br>
+      心身の疲れがたまっている方、集中力や睡眠の質を高めたい方に最適です。<br>
+      料金：5,000円
+    </li>
+  </ul>
+
+  <div style="text-align:center; margin-top:20px;">
+    <a href="reservation.html" class="btn">ご予約はこちら</a>
+  </div>
 </div>
 
-<div class="section2 contact" id="contact">
+<!-- 当院の特徴 -->
+<div class="section section2">
+  <h2>当院の特徴</h2>
+  <p>心と体を整え、日常生活の質を向上させるための整体です。<br>
+     エネルギーの流れに注目した施術で、身体の不調やストレスを和らげます。</p>
+</div>
+
+<!-- お問い合わせ -->
+<div class="section section3" id="contact">
   <h2>お問い合わせ</h2>
   <p>電話番号: <a href="tel:08018909043">080-1890-9043</a></p>
   <p>メールアドレス: <a href="mailto:clayry_touch@yahoo.co.jp">clayry_touch@yahoo.co.jp</a></p>
 </div>
 
-<div class="section3">
-  <h2>空き状況カレンダー</h2>
-  <div class="calendar-nav">
-    <button id="prevMonth">&lt; 前月</button>
-    <div id="monthYear"></div>
-    <button id="nextMonth">次月 &gt;</button>
-  </div>
-  <div class="calendar" id="calendar"></div>
-
-  <h2>予約フォーム</h2>
-  <form id="reservation-form">
-    <input type="text" name="name" placeholder="お名前" required>
-    <input type="tel" name="tel" placeholder="電話番号" required>
-    <input type="email" name="email" placeholder="メールアドレス" required>
-    <input type="text" name="date" id="selected-date" placeholder="希望日" readonly required>
-    <textarea name="message" placeholder="ご要望・メッセージ" rows="4"></textarea>
-    <button type="submit">送信</button>
-  </form>
-  <p id="form-message" style="text-align:center;color:green;"></p>
-</div>
-
 <div class="footer">
   <p>&copy; 2025 メディマインドエネルギー整体</p>
 </div>
-
-<script>
-// Google Sheets APIのURL（Apps Scriptで作成したもの）
-const apiGetUrl = "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec?action=get";
-const apiPostUrl = "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec?action=post";
-
-const calendarEl = document.getElementById('calendar');
-const monthYearEl = document.getElementById('monthYear');
-const prevBtn = document.getElementById('prevMonth');
-const nextBtn = document.getElementById('nextMonth');
-const selectedInput = document.getElementById('selected-date');
-const form = document.getElementById('reservation-form');
-const formMessage = document.getElementById('form-message');
-
-let today = new Date();
-let currentMonth = today.getMonth();
-let currentYear = today.getFullYear();
-let bookedDates = {}; // { "2025-10": [5,12,18], ... } を取得
-
-async function fetchBookedDates(){
-  try{
-    const res = await fetch(apiGetUrl);
-    const data = await res.json();
-    bookedDates = data; // {"2025-10":[5,12,18],...}
-    renderCalendar(currentMonth,currentYear);
-  }catch(err){
-    console.error("予約データ取得エラー",err);
-  }
-}
-
-function renderCalendar(month, year){
-  calendarEl.innerHTML = "";
-  const firstDay = new Date(year,month,1).getDay();
-  const daysInMonth = new Date(year,month+1,0).getDate();
-  const monthKey = `${year}-${(month+1).toString().padStart(2,'0')}`;
-  const booked = bookedDates[monthKey] || [];
-
-  monthYearEl.textContent = `${year}年 ${month+1}月`;
-
-  for(let i=0;i<firstDay;i++){
-    calendarEl.appendChild(document.createElement('div'));
-  }
-
-  for(let i=1;i<=daysInMonth;i++){
-    const day = document.createElement('div');
-    day.textContent = i;
-    const dateObj = new Date(year,month,i);
-    const isPast = dateObj < new Date(today.getFullYear(), today.getMonth(), today.getDate());
-    if(isPast || booked.includes(i)){
-      day.classList.add('unavailable');
-    } else {
-      day.classList.add('available');
-      day.addEventListener('click',()=>{
-        document.querySelectorAll('.calendar div').forEach(d=>d.classList.remove('selected'));
-        day.classList.add('selected');
-        selectedInput.value = `${year}-${(month+1).toString().padStart(2,'0')}-${i.toString().padStart(2,'0')}`;
-      });
-    }
-    calendarEl.appendChild(day);
-  }
-}
-
-prevBtn.addEventListener('click', ()=>{
-  currentMonth--;
-  if(currentMonth <0){currentMonth=11; currentYear--;}
-  renderCalendar(currentMonth,currentYear);
-});
-nextBtn.addEventListener('click', ()=>{
-  currentMonth++;
-  if(currentMonth>11){currentMonth=0; currentYear++;}
-  renderCalendar(currentMonth,currentYear);
-});
-
-// フォーム送信
-form.addEventListener('submit', async (e)=>{
-  e.preventDefault();
-  const formData = new FormData(form);
-  const payload = Object.fromEntries(formData.entries());
-
-  try{
-    const res = await fetch(apiPostUrl,{
-      method:"POST",
-      headers:{"Content-Type":"application/json"},
-      body: JSON.stringify(payload)
-    });
-    const data = await res.json();
-    if(data.result==="success"){
-      formMessage.textContent="予約が送信されました！";
-      form.reset();
-      fetchBookedDates(); // 送信後にカレンダーを更新
-    }else{
-      formMessage.textContent="送信エラーです。再度お試しください。";
-    }
-  }catch(err){
-    console.error(err);
-    formMessage.textContent="送信中にエラーが発生しました。";
-  }
-});
-
-fetchBookedDates();
-</script>
 
 </body>
 </html>
