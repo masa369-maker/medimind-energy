@@ -5,166 +5,121 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>メディマインドエネルギー整体</title>
 <style>
-body {
+/* 基本設定 */
+body, html {
     margin:0;
+    padding:0;
     font-family:"Hiragino Kaku Gothic Pro","Helvetica",sans-serif;
     background-color:#F0FFF4;
-    color:#333;
+    scroll-behavior: smooth;
 }
-.header {
-    background-color:#C7E8C9;
-    padding:70px 20px;
-    text-align:center;
-}
-.header h1{
-    margin:0;
-    font-size:2.4em;
-    color:#2F5D4E;
+a {text-decoration:none; color:#3E6B57;}
+a:hover {color:#2F5D4E;}
+header {position:fixed; top:0; width:100%; background-color:#C7E8C9; z-index:1000; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+nav {max-width:1000px; margin:auto; display:flex; justify-content:space-between; align-items:center; padding:15px 20px;}
+nav a {margin-left:20px; font-weight:bold;}
+section {padding:70px 20px; margin-top:60px;}
+.section2 {background-color:#E8F6E8;}
+.section3 {background-color:#FFF8E7;}
+.main {background-color:#FDFDF7;}
+h1,h2 {color:#2F5D4E;}
+h1 {
     font-family:"Hiragino Maru Gothic Pro","Arial Rounded MT Bold","Helvetica",sans-serif;
     font-weight:normal;
     letter-spacing:0.05em;
     text-shadow:1px 1px 2px rgba(0,0,0,0.1);
-}
-.header p{font-size:1.1em;color:#3E6B57;}
-
-.section {
-    padding:60px 20px;
-    margin-bottom:40px;
-}
-.section h2{text-align:center;margin-bottom:30px;color:#2F5D4E;}
-.section2{background-color:#E8F6E8;}
-.section3{background-color:#FFF8E7;}
-.main{background-color:#FDFDF7;padding:50px 20px;}
-
-.btn{
-    display:inline-block;
-    background-color:#3E6B57;
-    color:#fff;
-    padding:14px 28px;
-    text-decoration:none;
-    border-radius:20px;
-    transition:0.3s;
-    font-weight:bold;
-}
-.btn:hover{background-color:#2F5D4E;}
-
-ul{max-width:700px;margin:0 auto; padding-left:20px;}
-ul li{margin-bottom:25px;line-height:1.6;}
-
-a{color:#3E6B57;text-decoration:none;border-radius:8px;padding:4px 8px;}
-a:hover{background-color:#C7E8C9;color:#fff;}
-
-.footer{
-    background-color:#FFF8E7;
-    padding:30px 20px;
     text-align:center;
-    font-size:0.9em;
+    font-size:2.4em;
+    margin-bottom:10px;
 }
+h2 {text-align:center; margin-bottom:30px; font-size:1.8em;}
+p {line-height:1.6;}
+.btn {display:inline-block; background-color:#3E6B57; color:#fff; padding:14px 28px; border-radius:20px; font-weight:bold; transition:0.3s; text-align:center;}
+.btn:hover {background-color:#2F5D4E;}
+ul {max-width:700px; margin:0 auto; padding-left:20px;}
+ul li {margin-bottom:25px; line-height:1.6;}
 
-/* 予約フォーム */
-form{
-    max-width:600px;
-    margin:auto;
-    background-color:#FDFDF7;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.05);
-}
-input, textarea, select{
-    width:100%;
-    padding:14px;
-    margin:10px 0;
-    border-radius:10px;
-    border:1px solid #ccc;
-}
-input[type=submit]{
-    background-color:#3E6B57;
-    color:#fff;
-    border:none;
-    cursor:pointer;
-    font-weight:bold;
-}
-input[type=submit]:hover{background-color:#2F5D4E;}
+/* フォーム */
+form {max-width:600px; margin:auto; background-color:#FDFDF7; padding:25px; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.05);}
+input, textarea, select {width:100%; padding:14px; margin:10px 0; border-radius:10px; border:1px solid #ccc;}
+input[type=submit] {background-color:#3E6B57; color:#fff; border:none; cursor:pointer; font-weight:bold;}
+input[type=submit]:hover {background-color:#2F5D4E;}
 
 /* カレンダー */
 iframe {width:100%; max-width:100%; border-radius:15px;}
 
 /* FAQ */
-.faq{max-width:800px;margin:0 auto;}
-.faq-item{margin-bottom:25px;}
-.faq-item h3{font-size:1.1em;color:#2F5D4E;margin-bottom:8px;}
-.faq-item p{margin:0 0 10px 0;line-height:1.6;}
+.faq {max-width:800px; margin:0 auto;}
+.faq-item {margin-bottom:25px;}
+.faq-item h3 {font-size:1.1em; color:#2F5D4E; margin-bottom:8px;}
+.faq-item p {margin:0 0 10px 0; line-height:1.6;}
 
-/* お問い合わせの左右均等 */
-.contact-flex{
-    display:flex;
-    justify-content:space-around;
-    max-width:600px;
-    margin:0 auto;
-    flex-wrap:wrap;
-    text-align:center;
+/* お問い合わせ */
+.contact-flex {display:flex; justify-content:space-around; max-width:600px; margin:0 auto; flex-wrap:wrap; text-align:center;}
+.contact-flex p {margin:10px 0;}
+
+/* フッター */
+.footer {background-color:#FFF8E7; padding:30px 20px; text-align:center; font-size:0.9em;}
+
+/* レスポンシブ */
+@media screen and (max-width:768px) {
+    nav {flex-direction:column; align-items:flex-start;}
+    nav a {margin:10px 0 0 0;}
+    .contact-flex {flex-direction:column; align-items:center;}
 }
-.contact-flex p{margin:10px 0;}
 </style>
 </head>
 <body>
 
-<!-- トップタイトル -->
-<div class="header">
+<!-- ヘッダー -->
+<header>
+<nav>
+  <div class="logo"><a href="#top"><strong>メディマインドエネルギー整体</strong></a></div>
+  <div class="menu">
+    <a href="#features">特徴</a>
+    <a href="#menu">施術メニュー</a>
+    <a href="#reservation-form">予約</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">お問い合わせ</a>
+  </div>
+</nav>
+</header>
+
+<!-- トップ -->
+<section id="top">
   <h1>メディマインドエネルギー整体</h1>
-  <p>心と体のバランスを整える癒しの整体</p>
-</div>
+  <p style="text-align:center;">心と体のバランスを整える癒しの整体</p>
+</section>
 
 <!-- 当院の特徴 -->
-<div class="section section2">
+<section id="features" class="section section2">
   <h2>当院の特徴</h2>
-  <p>心と体を整え、日常生活の質を向上させるための整体です。<br>
-     エネルギーの流れに注目した施術で、身体の不調やストレスを和らげます。<br>
-     初めての方でも安心して受けられる丁寧な施術です。</p>
+  <p>心と体を整え、日常生活の質を向上させるための整体です。エネルギーの流れに注目した施術で、身体の不調やストレスを和らげます。初めての方でも安心して受けられる丁寧な施術です。</p>
   <p>※施術はレンタルスペースで行います。プライベートな空間で、リラックスして施術を受けていただけます。</p>
-</div>
+</section>
 
 <!-- 施術メニュー -->
-<div class="section main">
+<section id="menu" class="section main">
   <h2>施術メニュー</h2>
   <ul>
-    <li>
-      <strong>エネルギー整体 60分</strong><br>
-      身体の緊張をほぐし、エネルギーの流れを整えます。<br>
-      効果：ストレス軽減・リラックス・姿勢改善<br>
-      料金：8,000円
-    </li>
-    <li>
-      <strong>エネルギー整体 90分</strong><br>
-      60分コースに加え、深層の筋肉や心の緊張も調整します。<br>
-      効果：慢性的な疲れ・頭痛・不眠の緩和<br>
-      料金：12,000円
-    </li>
-    <li>
-      <strong>ヒーリング 30分</strong><br>
-      心身のバランスを整え、短時間でもスッキリ感を体感できます。<br>
-      料金：3,000円
-    </li>
-    <li>
-      <strong>ヒーリング 60分</strong><br>
-      全身のエネルギーを調整し、深いリラクゼーションを実感。<br>
-      料金：5,000円
-    </li>
+    <li><strong>エネルギー整体 60分</strong> - 身体の緊張をほぐし、エネルギーの流れを整えます。料金：8,000円</li>
+    <li><strong>エネルギー整体 90分</strong> - 深層の筋肉や心の緊張も調整。料金：12,000円</li>
+    <li><strong>ヒーリング 30分</strong> - 短時間でもスッキリ感を体感。料金：3,000円</li>
+    <li><strong>ヒーリング 60分</strong> - 全身のエネルギーを調整し深いリラクゼーション。料金：5,000円</li>
   </ul>
   <div style="text-align:center; margin-top:20px;">
     <a href="#reservation-form" class="btn">ご予約はこちら</a>
   </div>
-</div>
+</section>
 
 <!-- 予約カレンダー -->
-<div class="section section2">
+<section class="section section2">
   <h2>予約カレンダー</h2>
-  <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=Asia/Tokyo"
-    style="border:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-</div>
+  <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=Asia/Tokyo" style="border:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+</section>
 
 <!-- 予約フォーム -->
-<div class="section main" id="reservation-form">
+<section id="reservation-form" class="section main">
   <h2>予約フォーム</h2>
   <form action="https://formspree.io/f/clayry_touch" method="POST">
     <label>お名前</label>
@@ -186,53 +141,31 @@ iframe {width:100%; max-width:100%; border-radius:15px;}
     <textarea name="note" rows="4" placeholder="ご希望や質問など"></textarea>
     <input type="submit" value="予約を送信">
   </form>
-</div>
+</section>
 
-<!-- よくある質問 -->
-<div class="section section3">
+<!-- FAQ -->
+<section id="faq" class="section section3">
   <h2>よくある質問</h2>
   <div class="faq">
-    <div class="faq-item">
-      <h3>① 予約時間の何分前に来れば良いですか？</h3>
-      <p>予約時間の5分前にレンタルスペースへお越しください。遅刻されそうな場合は必ずお電話でご連絡ください。15分以上の遅刻はキャンセル扱いになる場合があります。</p>
-    </div>
-    <div class="faq-item">
-      <h3>② キャンセル料はかかりますか？</h3>
-      <p>当日キャンセルのみ、一律3,000円を頂戴します。連絡なしの当日キャンセルは全額、かつ今後のご予約をお断りする場合があります。</p>
-    </div>
-    <div class="faq-item">
-      <h3>③ 健康保険は使えますか？</h3>
-      <p>当院の施術は民間療法です。病院・接骨院・マッサージ・鍼灸院とは異なり、健康保険は使用できません。</p>
-    </div>
-    <div class="faq-item">
-      <h3>④ どんな服装で行けば良いですか？</h3>
-      <p>施術の妨げにならない動きやすい服装であれば、そのままで大丈夫です。着替えの必要はありません。</p>
-    </div>
-    <div class="faq-item">
-      <h3>⑤ ソフトな整体とのことですが、痛くないですか？</h3>
-      <p>基本的に痛みはありません。施術の強さは効果に比例せず、ソフトな方が効果を高く感じることがあります。</p>
-    </div>
-    <div class="faq-item">
-      <h3>⑥ どのくらいの頻度で受ければ良いですか？</h3>
-      <p>初めての方は週1回、または10日に1回をおすすめします。身体は歪んだ状態を正しいと思い込むため、間隔をあけず一定期間続けて受けることで、より効果的に状態を整えられます。</p>
-    </div>
+    <div class="faq-item"><h3>① 予約時間の何分前に来れば良いですか？</h3><p>予約時間の5分前にレンタルスペースへお越しください。遅刻されそうな場合は必ずお電話でご連絡ください。15分以上の遅刻はキャンセル扱いになる場合があります。</p></div>
+    <div class="faq-item"><h3>② キャンセル料はかかりますか？</h3><p>当日キャンセルのみ、一律3,000円を頂戴します。連絡なしの当日キャンセルは全額、かつ今後のご予約をお断りする場合があります。</p></div>
+    <div class="faq-item"><h3>③ 健康保険は使えますか？</h3><p>当院の施術は民間療法です。健康保険は使用できません。</p></div>
+    <div class="faq-item"><h3>④ どんな服装で行けば良いですか？</h3><p>施術の妨げにならない動きやすい服装であれば、そのままで大丈夫です。</p></div>
+    <div class="faq-item"><h3>⑤ ソフトな整体とのことですが、痛くないですか？</h3><p>基本的に痛みはありません。施術の強さは効果に比例せず、ソフトな方が効果を高く感じることがあります。</p></div>
+    <div class="faq-item"><h3>⑥ どのくらいの頻度で受ければ良いですか？</h3><p>初めての方は週1回、または10日に1回をおすすめします。間隔をあけず一定期間続けて受けることで、より効果的に身体を整えられます。</p></div>
   </div>
-</div>
-
-<!-- 区切り線 -->
-<div style="max-width:800px;margin:0 auto;padding:20px 0;">
-  <hr style="border:1px solid #C7E8C9;">
-</div>
+</section>
 
 <!-- お問い合わせ -->
-<div class="section section3" id="contact">
+<section id="contact" class="section section3">
   <h2>お問い合わせ</h2>
   <div class="contact-flex">
     <p>電話番号: <a href="tel:08018909043">080-1890-9043</a></p>
     <p>メールアドレス: <a href="mailto:clayry_touch@yahoo.co.jp">clayry_touch@yahoo.co.jp</a></p>
   </div>
-</div>
+</section>
 
+<!-- フッター -->
 <div class="footer">
   <p>&copy; 2025 メディマインドエネルギー整体</p>
 </div>
