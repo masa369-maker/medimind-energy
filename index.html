@@ -6,8 +6,8 @@
 <title>メディマインドエネルギー整体</title>
 <style>
 body {margin:0;font-family:"Helvetica",sans-serif;background-color:#E8F6E8;color:#333;}
-.header{background-color:#D0F0C0;padding:20px;text-align:center;}
-.header h1{margin:0;font-size:2em;}
+.header{background-color:#D0F0C0;padding:40px 20px;text-align:center;}
+.header h1{margin:0;font-size:2.2em;}
 .section{padding:40px 20px;}
 .section h2{text-align:center;margin-bottom:20px;}
 .section2{background-color:#F3E8F6;}
@@ -20,10 +20,11 @@ ul li{margin-bottom:20px;}
 a{color:#457B9D;text-decoration:none;border-radius:8px;padding:4px 8px;}
 a:hover{background-color:#A8DADC;color:#fff;}
 .footer{background-color:#FFF8E7;padding:20px;text-align:center;font-size:0.9em;}
+
 /* スライダー用 */
-.slider{position:relative;max-width:100%;margin:auto;overflow:hidden;border-radius:12px;}
-.slides{display:flex;width:300%;animation:slide 12s infinite;}
-.slides img{width:100%;border-radius:12px;}
+.slider {position:relative; max-width:100%; margin:auto; overflow:hidden; border-radius:12px;}
+.slides {display:flex; width:300%; animation:slide 12s infinite;}
+.slides img {width:100%; border-radius:12px;}
 @keyframes slide {
   0% {transform:translateX(0%);}
   25% {transform:translateX(-100%);}
@@ -31,23 +32,33 @@ a:hover{background-color:#A8DADC;color:#fff;}
   75% {transform:translateX(-100%);}
   100% {transform:translateX(0%);}
 }
+
+/* カレンダーのレスポンシブ調整 */
+iframe {width:100%; max-width:100%; border-radius:12px;}
 </style>
 </head>
 <body>
 
-<!-- 当院の特徴を最上部に -->
+<!-- トップタイトル -->
+<div class="header">
+  <h1>メディマインドエネルギー整体</h1>
+  <p>心と体のバランスを整える癒しの整体</p>
+</div>
+
+<!-- 当院の特徴 -->
 <div class="section section2">
   <h2>当院の特徴</h2>
   <p>心と体を整え、日常生活の質を向上させるための整体です。<br>
-     エネルギーの流れに注目した施術で、身体の不調やストレスを和らげます。</p>
+     エネルギーの流れに注目した施術で、身体の不調やストレスを和らげます。<br>
+     初めての方でも安心して受けられる施術内容です。</p>
 </div>
 
 <!-- 画像スライダー -->
 <div class="slider">
   <div class="slides">
-    <img src="https://images.unsplash.com/photo-1556228720-68a4ed73dc1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="リラックス整体">
-    <img src="https://images.unsplash.com/photo-1554284126-5c05b15de08b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="ヒーリング整体">
-    <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="癒しイメージ">
+    <img src="https://images.unsplash.com/photo-1612197521153-67ed1b5a6c21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="整体施術イメージ1">
+    <img src="https://images.unsplash.com/photo-1605902711622-cfb43c443a43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="整体施術イメージ2">
+    <img src="https://images.unsplash.com/photo-1588776814546-3692d0c524f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="リラックス施術イメージ">
   </div>
 </div>
 
