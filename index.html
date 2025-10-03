@@ -5,26 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>メディマインドエネルギー整体</title>
 <style>
-body {margin:0;font-family:"Helvetica",sans-serif;background-color:#E8F6E8;color:#333;}
-.header{background-color:#D0F0C0;padding:40px 20px;text-align:center;}
-.header h1{margin:0;font-size:2.2em;}
-.section{padding:40px 20px;}
-.section h2{text-align:center;margin-bottom:20px;}
-.section2{background-color:#F3E8F6;}
+body {margin:0;font-family:"Hiragino Kaku Gothic Pro","Helvetica",sans-serif;background-color:#F0FFF4;color:#333;}
+.header{background-color:#C7E8C9;padding:50px 20px;text-align:center;}
+.header h1{margin:0;font-size:2.4em;color:#2F5D4E;}
+.header p{font-size:1.1em;color:#3E6B57;}
+.section{padding:50px 20px;}
+.section h2{text-align:center;margin-bottom:30px;color:#2F5D4E;}
+.section2{background-color:#E8F6E8;}
 .section3{background-color:#FFF8E7;}
-.main{background-color:#FDF6E3;padding:40px 20px;}
-.btn{display:inline-block;background-color:#A8DADC;color:#fff;padding:12px 24px;text-decoration:none;border-radius:12px;transition:0.3s;}
-.btn:hover{background-color:#457B9D;}
+.main{background-color:#FDFDF7;padding:50px 20px;}
+.btn{display:inline-block;background-color:#3E6B57;color:#fff;padding:14px 28px;text-decoration:none;border-radius:20px;transition:0.3s;font-weight:bold;}
+.btn:hover{background-color:#2F5D4E;}
 ul{max-width:700px;margin:0 auto; padding-left:20px;}
-ul li{margin-bottom:20px;}
-a{color:#457B9D;text-decoration:none;border-radius:8px;padding:4px 8px;}
-a:hover{background-color:#A8DADC;color:#fff;}
+ul li{margin-bottom:25px;line-height:1.6;}
+a{color:#3E6B57;text-decoration:none;border-radius:8px;padding:4px 8px;}
+a:hover{background-color:#C7E8C9;color:#fff;}
 .footer{background-color:#FFF8E7;padding:20px;text-align:center;font-size:0.9em;}
 
 /* スライダー */
-.slider {position:relative; max-width:100%; margin:auto; overflow:hidden; border-radius:12px;}
+.slider {position:relative; max-width:100%; margin:auto; overflow:hidden; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1);}
 .slides {display:flex; width:300%; animation:slide 12s infinite;}
-.slides img {width:100%; border-radius:12px;}
+.slides img {width:100%; border-radius:15px;}
 @keyframes slide {
   0% {transform:translateX(0%);}
   25% {transform:translateX(-100%);}
@@ -34,13 +35,13 @@ a:hover{background-color:#A8DADC;color:#fff;}
 }
 
 /* 予約フォーム */
-form{max-width:600px;margin:auto;background-color:#FDF6E3;padding:20px;border-radius:12px;}
-input, textarea, select{width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #ccc;}
-input[type=submit]{background-color:#A8DADC;color:#fff;border:none;cursor:pointer;}
-input[type=submit]:hover{background-color:#457B9D;}
+form{max-width:600px;margin:auto;background-color:#FDFDF7;padding:25px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.05);}
+input, textarea, select{width:100%;padding:14px;margin:10px 0;border-radius:10px;border:1px solid #ccc;}
+input[type=submit]{background-color:#3E6B57;color:#fff;border:none;cursor:pointer;font-weight:bold;}
+input[type=submit]:hover{background-color:#2F5D4E;}
 
-/* カレンダーのレスポンシブ */
-iframe {width:100%; max-width:100%; border-radius:12px;}
+/* カレンダー */
+iframe {width:100%; max-width:100%; border-radius:15px;}
 </style>
 </head>
 <body>
@@ -54,17 +55,17 @@ iframe {width:100%; max-width:100%; border-radius:12px;}
 <!-- 当院の特徴 -->
 <div class="section section2">
   <h2>当院の特徴</h2>
-  <p>心と体を整え、日常生活の質を向上させるための整体です。<br>
-     エネルギーの流れに注目した施術で、身体の不調やストレスを和らげます。<br>
-     初めての方でも安心して受けられる施術内容です。</p>
+  <p>心と体の調和を大切にしたエネルギー整体で、日常の疲れやストレスを和らげます。<br>
+     初めての方でも安心して受けられる丁寧な施術です。<br>
+     身体の緊張をほぐし、心もリラックスできる空間を提供します。</p>
 </div>
 
 <!-- 画像スライダー -->
 <div class="slider">
   <div class="slides">
-    <img src="https://images.unsplash.com/photo-1612197521153-67ed1b5a6c21?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="整体施術イメージ1">
-    <img src="https://images.unsplash.com/photo-1605902711622-cfb43c443a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="整体施術イメージ2">
-    <img src="https://images.unsplash.com/photo-1588776814546-3692d0c524f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="リラックス施術イメージ">
+    <img src="slide1.jpg" alt="整体施術イメージ1">
+    <img src="slide2.jpg" alt="整体施術イメージ2">
+    <img src="slide3.jpg" alt="リラックス施術イメージ">
   </div>
 </div>
 
@@ -74,7 +75,7 @@ iframe {width:100%; max-width:100%; border-radius:12px;}
   <ul>
     <li>
       <strong>エネルギー整体 60分</strong><br>
-      身体の緊張や疲れをほぐし、エネルギーの流れを整えます。<br>
+      身体の緊張をほぐし、エネルギーの流れを整えます。<br>
       効果：ストレス軽減・リラックス・姿勢改善<br>
       料金：8,000円
     </li>
@@ -86,14 +87,12 @@ iframe {width:100%; max-width:100%; border-radius:12px;}
     </li>
     <li>
       <strong>ヒーリング 30分</strong><br>
-      心と体のエネルギーのバランスを整え、短時間でもスッキリとしたリラックス感を体感できます。<br>
-      日常のストレスや疲労を和らげたい方、初めてヒーリングを体験される方におすすめです。<br>
+      心身のバランスを整え、短時間でもスッキリ感を体感できます。<br>
       料金：3,000円
     </li>
     <li>
       <strong>ヒーリング 60分</strong><br>
-      じっくりと全身のエネルギーを調整し、深いリラクゼーションを実感できます。<br>
-      心身の疲れがたまっている方、集中力や睡眠の質を高めたい方に最適です。<br>
+      全身のエネルギーを調整し、深いリラクゼーションを実感。<br>
       料金：5,000円
     </li>
   </ul>
@@ -115,13 +114,10 @@ iframe {width:100%; max-width:100%; border-radius:12px;}
   <form action="https://formspree.io/f/yourformid" method="POST">
     <label>お名前</label>
     <input type="text" name="name" required>
-
     <label>メールアドレス</label>
     <input type="email" name="email" required>
-
     <label>電話番号</label>
     <input type="tel" name="tel" required>
-
     <label>希望メニュー</label>
     <select name="menu" required>
       <option value="エネルギー整体60分">エネルギー整体 60分</option>
@@ -129,13 +125,10 @@ iframe {width:100%; max-width:100%; border-radius:12px;}
       <option value="ヒーリング30分">ヒーリング 30分</option>
       <option value="ヒーリング60分">ヒーリング 60分</option>
     </select>
-
     <label>希望日時</label>
     <input type="datetime-local" name="datetime" required>
-
     <label>備考</label>
     <textarea name="note" rows="4" placeholder="ご希望や質問など"></textarea>
-
     <input type="submit" value="予約を送信">
   </form>
 </div>
