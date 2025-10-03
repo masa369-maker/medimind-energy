@@ -44,6 +44,10 @@ iframe {width:100%; max-width:100%; border-radius:15px;}
 .faq-item{margin-bottom:25px;}
 .faq-item h3{font-size:1.1em;color:#2F5D4E;margin-bottom:8px;}
 .faq-item p{margin:0 0 10px 0;line-height:1.6;}
+
+/* お問い合わせの左右均等 */
+.contact-flex{display:flex; justify-content:space-around; max-width:600px; margin:0 auto; flex-wrap:wrap; text-align:center;}
+.contact-flex p{margin:10px 0;}
 </style>
 </head>
 <body>
@@ -105,7 +109,7 @@ iframe {width:100%; max-width:100%; border-radius:15px;}
 <!-- 予約フォーム -->
 <div class="section main" id="reservation-form">
   <h2>予約フォーム</h2>
-  <form action="https://formspree.io/f/yourformid" method="POST">
+  <form action="https://formspree.io/f/clayry_touch" method="POST">
     <label>お名前</label>
     <input type="text" name="name" required>
     <label>メールアドレス</label>
@@ -166,8 +170,10 @@ iframe {width:100%; max-width:100%; border-radius:15px;}
 <!-- お問い合わせ -->
 <div class="section section3" id="contact">
   <h2>お問い合わせ</h2>
-  <p>電話番号: <a href="tel:08018909043">080-1890-9043</a></p>
-  <p>メールアドレス: <a href="mailto:clayry_touch@yahoo.co.jp">clayry_touch@yahoo.co.jp</a></p>
+  <div class="contact-flex">
+    <p>電話番号: <a href="tel:08018909043">080-1890-9043</a></p>
+    <p>メールアドレス: <a href="mailto:clayry_touch@yahoo.co.jp">clayry_touch@yahoo.co.jp</a></p>
+  </div>
 </div>
 
 <div class="footer">
