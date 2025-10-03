@@ -54,6 +54,11 @@
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
+      border-bottom: 2px solid #FFE0C2; /* セクション仕切り線 */
+    }
+
+    .section:nth-child(even) {
+      background: #FFF3E6; /* 偶数セクションは淡いオレンジ背景 */
     }
 
     .section h2 {
@@ -61,6 +66,9 @@
       margin-bottom: 40px;
       font-size: 1.8em;
       color: #E76F51;
+      border-bottom: 3px solid #FFB347;
+      display: inline-block;
+      padding-bottom: 5px;
     }
 
     /* 当院の特徴 */
@@ -168,7 +176,7 @@
       color: white;
       text-align: center;
       padding: 15px;
-      margin-top: 40px;
+      margin-top: 0;
     }
 
     @media (max-width: 768px) {
